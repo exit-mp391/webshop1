@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto Condensed', sans-serif;*/
+}
+
+.border {
+	border: 1px solid red;
+}
+
+
+/*
+		PRODUCTS
+*/
+
+.product-card-link,
+.product-card-link:visited {
+	text-decoration: none;
+	color: #222;
+}
+
+.product-card-link:hover {
+	text-decoration: none;
+	color: #222;
+}
+
+.product-card {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	margin-bottom: 16px;
+}
+
+.product-card .product-admin-menu {
+	display: none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	padding: 8px;
+}
+
+.product-card .product-admin-menu form > * {
+	float: right;
+}
+
+.product-card .product-admin-menu form > a {
+	margin-top: 0;
+}
+
+.product-card:hover .product-admin-menu {
+	display: block;
+}
+
+/*.product-card img {
+	width: 100%;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	margin-bottom: 8px;
+}*/
+
+.product-card .img {
+
+}
+.product-card .img img {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+	object-position: center;
+	/*object-position: 50% 50%;*/
+}
+
+.product-card a.btn,
+.product-card .price,
+.product-card h4 {
+	margin: 8px;
+}
+
+.add-to-cart .input-group {
+	width: 170px;
+}
+
+.add-to-cart .input-group input {
+	height: 34px;
+}
+
+/*
+		PRODUCT DETAILS
+*/
+
+.product-details img {
+	width: 100%;
+}
+
+.product-details .description {
+	margin: 32px 0px;
+}
+
+.product-details .price {
+	font-weight: bold;
+}
+
+.product-details .add-to-cart {
+	//
+}
+
+
+/*
+		COMMENTS
+*/
+.comment-info {
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: .8em;
+}
+
+.comment-text {
+	margin: 8px 8px 0 8px;
+	padding: 4px 4px 0 4px;
+}
+.comment-form textarea {
+	display: block;
+	width: 100%;
+	margin: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 4px;
+}
+
+.comment {
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, .3);
+	padding: 4px;
+	border-radius: 3px;
+	margin: 8px 0;
+}
+
+.comment button.btn-del-com {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	display: none;
+}
+
+.comment:hover button.btn-del-com {
+	display: block;
+}
+
+
+/*
+MESSAGES
+*/
+.messages-table {
+	width: 100%;
+}
+
+
+/*
+FOOTER
+*/
+/*.footer-container {
+width: 100%;
+position: fixed;
+left: 0px;
+bottom: 0px;
+background-color: rgba(255, 255, 255, .8);
+}*/
+
+
+/*
+		CHAT
+*/
+
+.contacts-container .contact {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	margin-bottom: 4px;
+	padding-bottom: 4px;
+	text-decoration: none;
+}
+
+/*.contacts-container .contact:hover {
+	background-color: rgba(0, 0, 0, .05);
+}*/
+
+.contacts-container .contact .icon img {
+	border-radius: 50%;
+}
+
+.contacts-container .contact .info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 8px;
+	flex: 1;
+}
+
+.contacts-container .contact .right-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.contacts-container .contact .right-side .count {
+	background-color: rgba(0, 0, 0, .1);
+	border-radius: 3px;
+	padding: 4px;
+	font-size: .8em;
+	line-height: .8em;
+	font-weight: bold;
+}
+
+.contacts-container .contact .info .username {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.contacts-container .contact .info .email {
+	color: rgba(0, 0, 0, .8);
+	font-size: .9em;
+}
+
+.messages-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.messages-container .message {
+	margin: 4px;
+	border-radius: 3px;
+	padding: 4px;
+	display: flex;
+	flex-direction: column;
+}
+.messages-container .message .info {
+	font-size: .7em;
+	font-weight: bold;
+}
+
+
+
+.messages-container .message-s .info {
+	font-size: .7em;
+	font-weight: bold;
+	align-self: flex-end;
+}
+
+.messages-container .message-r {
+	width: 80%;
+	background-color: rgba(3, 169, 244, .7);
+	border: 1px solid rgba(3, 169, 244, 1);
+	color: white;
+}
+
+.messages-container .message-s {
+	width: 80%;
+	background-color: rgba(245, 124, 0, .7);
+	border: 1px solid rgba(245, 124, 0, 1);
+	color: white;
+	align-self: flex-end;
+}
+
+
+.edit-img-container {
+	position: relative;
+	width: 300px;
+	max-height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+
+.edit-img-container .img-msg {
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+	padding: 4px;
+	background-color: rgba(0, 0, 0, .8);
+	color: white;
+	border-radius: 5px;
+}
+
+#edit_img_input {
+	display: none;
+}
+
+.pagination-container {
+	display: flex;
+	justify-content: center;
+}
+
+/*
+		MODAL
+*/
+
+.win-container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .3s;
+}
+
+.win-container .win {
+	width: 400px;
+	background-color: white;
+	border: 5px solid #757575;
+	border-radius: 8px;
+}
+
+.win-container .win h1 {
+	margin: 0;
+	padding: 8px;
+	background-color: #607D8B;
+	color: white;
+}
+
+.win-container .win p {
+	padding: 16px;
+}
+
+.win-container .win .buttons {
+	padding: 8px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.win-container .win .buttons button {
+	padding: 8px;
+	border: 2px solid #CFD8DC;
+	background-color: white;
+	border-radius: 5px;
+	margin: 4px;
+	outline: none;
+	transition: all .5s;
+}
+
+.win-container .win .buttons button:hover {
+	border-color: #607D8B;
+}

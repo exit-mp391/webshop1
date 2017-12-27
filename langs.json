@@ -1,0 +1,20 @@
+{
+  "en": {
+    "titles": {
+      "category": "Categories",
+      "page_index": "Welcome"
+    },
+    "buttons": {
+      "add": "Add"
+    }
+  },
+  "rs": {
+    "titles": {
+      "category": "Kategorije",
+      "page_index": "Dobrodosli!"
+    },
+    "buttons": {
+      "add": "Dodaj"
+    }
+  }
+}
